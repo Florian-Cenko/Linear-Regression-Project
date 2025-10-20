@@ -35,7 +35,20 @@ Each row represents a customer and includes metrics about time spent on differen
 ```bash
 git clone <your-repo-url>
 ```
-2. Install dependencies:
+
+2. Create and activate a virtual environment (Recommended):
+```bash
+python -m venv venv
+```
+  - **Linux/macOS:**
+   ```bash
+      source venv/bin/activate
+   ```
+- **Windows:**
+   ```bash
+      venv\Scripts\activate
+   ```
+3. Install dependencies:
  ```bash
 pip install <name of libraries>
 ```
