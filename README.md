@@ -37,7 +37,7 @@ git clone <your-repo-url>
 ```
 2. Install dependencies:
  ```bash
-pip install name of libraries
+pip install <name of libraries>
 ```
 3. Run the main Python script:
  ```bash
