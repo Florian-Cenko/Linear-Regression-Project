@@ -1,38 +1,33 @@
-# Finance-Data-Project
- This project focuses on exploratory data analysis (EDA) of stock prices for major U.S. banks using Python and Pandas.
- It was developed as part of the Python for Data Science and Machine Learning Bootcamp.
- The goal is to visualize and analyze how bank stocks evolved during and after the 2007–2008 financial crisis up to early 2016.
+# Linear-Regression-Project
+This project focuses on applying **Linear Regression** to analyze customer behavior for an **Ecommerce company based in New York City**.
+The company sells clothing online and also offers in-store style and clothing advice sessions.
+Customers can visit the store for consultations, then purchase clothing later through the **mobile app** or **website**.
+
+The goal of this project is to determine whether the company should focus more on improving its mobile app or website experience, based on customer usage data.
 
 ## Dataset Description
-Stock data is obtained using pandas-datareader, which fetches historical stock prices for each bank.
-We analyze the following institutions:
-
-- **Bank of America**
-
-- **CitiGroup**
-
-- **Goldman Sachs**
-
-- **JPMorgan Chase**
-
-- **Morgan Stanley**
-
-- **Wells Fargo**
-
-Each bank’s data is stored in a separate Pandas DataFrame, named after its ticker symbol (e.g., BAC for Bank of America).
+The dataset contains anonymized customer information related to their interactions with the ecommerce platform.
+Each row represents a customer and includes metrics about time spent on different channels and purchase behavior.
 
 ## Objectives
+- Perform exploratory data analysis (EDA) to understand key features and relationships
+- Build a **Linear Regression** model to predict yearly spending based on user activity
+- Determine which platform (mobile app or website) drives higher customer value
+- Provide actionable insights for marketing and product strategy teams
 
-- Retrieve historical stock data from January 1, 2006 to January 1, 2016 using pandas_datareader
-- Explore daily stock prices, trading volumes, and trends over time
-- Visualize bank stock performance during the financial crisis (2007–2008)
-- Compare key financial metrics across multiple banks
-- Practice data cleaning, manipulation, and visualization with real financial data
-
+  
+## Dataset Fields (example columns)
+- **Avg. Session Length:** Average session duration in minutes
+- **Time on App:** Average time spent on the mobile app
+- **Time on Website:** Average time spent on the website
+- **Length of Membership:** Years as a customer
+- **Yearly Amount Spent:** Annual spending in USD (target variable)
+  
 ## Tech Stack
 - Python
 - Pandas, NumPy
 - Matplotlib, Seaborn
+- Scikit-learn
 - PyCharm
 
 ## How to Run
@@ -46,10 +41,11 @@ pip install name of libraries
 ```
 3. Run the main Python script:
  ```bash
-python FinanceMain.py
+python linear_regression_project.py
 ```
+
 ## Notes
-- Make sure to use the latest working data source for pandas_datareader (as APIs may change)
-- You can check the latest supported sources in the official documentation: https://pandas-datareader.readthedocs.io/en/latest/remote_data.html
-- A pickle file with pre-fetched data is also provided in the course resources to avoid fetching issues
+- The dataset is fictional and used only for educational purposes
+- Focuses on understanding model interpretation and regression diagnostics
+- Great practice for beginners learning **machine learning** and **data analysis**
 
